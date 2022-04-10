@@ -8,6 +8,11 @@ import { Messages } from '../messages';
 })
 export class FormComponent implements OnInit {
 
+  contactName: string;
+  contactPublisher: string;
+  contactMessage: string;
+  newMessage; any;
+
   constructor() { }
 
   ngOnInit(): void {
