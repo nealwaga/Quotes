@@ -1,6 +1,6 @@
 export class Messages {
 
-    constructor ( public contactName: string, public contactPublisher: string, public contactMessage: string ) {
+    constructor ( public formName: string, public formPublisher: string, public formMessage: string ) {
 
     }
 }

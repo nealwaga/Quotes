@@ -8,10 +8,10 @@ import { Messages } from '../messages';
 })
 export class FormComponent implements OnInit {
 
-  formName: string;
-  formPublisher: string;
-  formMessage: string;
-  newMessage; any;
+  contactName: string = ''
+  contactPublisher: string = ''
+  contactMessage: string = ''
+  newMessage: any 
 
   messages = [
     
