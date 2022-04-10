@@ -3,9 +3,9 @@
 <div>
     <form action="" >
         <p> Please add a quote here: </p>
-        <input type="text" name="name" id="" autocomplete="off" placeholder="Your name..." class="form-control mb20" >
-        <input type="text" name="publisher" id="" autocomplete="off" placeholder="Publisher" class="form-control mb20" >
-        <textarea name="messages" id="" cols="30" rows="10" type="text" autocomplete="off" class="form-control mb20" ></textarea>
+        <input type="text" name="name" id="" autocomplete="off" placeholder="Your name..." [{ ngModel }]="contactName" class="form-control mb20" >
+        <input type="text" name="publisher" id="" autocomplete="off" placeholder="Publisher" [{ ngModel }]="contactPublisher" class="form-control mb20" >
+        <textarea name="messages" id="" cols="30" rows="10" type="text" autocomplete="off" [{ ngModel }]="contactMessage" class="form-control mb20" ></textarea>
         <button type="submit" class="btn btn-outline-success btn-lg" > SUBMIT </button>
     </form>
 </div>
