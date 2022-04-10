@@ -8,10 +8,14 @@ import { Messages } from '../messages';
 })
 export class FormComponent implements OnInit {
 
-  contactName: string;
-  contactPublisher: string;
-  contactMessage: string;
+  formName: string;
+  formPublisher: string;
+  formMessage: string;
   newMessage; any;
+
+  messages = [
+    
+  ];
 
   constructor() { }
 
