@@ -1,15 +1,15 @@
-<form>
+<form (ngSubmit)="submittingQuote(); quoteForm.resetForm({})" #quoteForm="ngForm">
     <div class="form-group">
-      <label for="exampleInputName1">Name</label>
-      <input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Enter Name">
+      <label for="publisher"> Name </label>
+      <input type="text" class="form-control" name="name" id="name" placeholder="Enter Name">
     </div>
-    <div class="form-group">
-      <label for="exampleInputPublisher1">Publisher</label>
-      <input type="publisher" class="form-control" id="exampleInputPublisher1" placeholder="Publisher">
+    <div class="form-control">
+      <label for="publisher"> Publisher </label>
+      <input type="text" name="publisher" class="form-control" id="publisher" placeholder="Publisher">
     </div>
-    <div class="form-group">
-        <label for="exampleFormControlTextarea1">Add Quote Here</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <div class="form-control">
+        <label for="exampleFormControlTextarea1"> Add Quote Here </label>
+        <textarea class="form-control" id="quote" name="quote" placeholder="Your Quote" #quote="ngModel" [(ngModel)]="newQuote.quote" rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+</form>

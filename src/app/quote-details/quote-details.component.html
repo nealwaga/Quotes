@@ -1,0 +1,17 @@
+
+<span id="upvote">
+    <span>{{ quote.upvote }} </span>
+    <span><button class="btn btn-success" (click)='upvote()'><i class="fa fa-thumbs-up"></i></button>
+    </span>
+  </span>
+  <span id="downvote">
+    <span>{{ quote.downvote }} </span>
+    <span><button class="btn btn-danger" (click)='downvote()'><i class="fa fa-thumbs-down"></i></button>
+    </span>
+    <span id="delete_quote">
+        <span><button class="btn btn-danger" (click)='quoteDelete(true)'><i class="fas fa-trash"></i></button></span>
+    </span>
+
+    <div class="bottom">
+        <span>Quote Age: </span><span>{{ quote.date | dateCount }} days</span>
+      </div>

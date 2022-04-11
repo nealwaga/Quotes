@@ -4,27 +4,32 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { QuotesComponent } from './quotes/quotes.component';
-import { HighlightDirective } from './highlight.directive';
 import { FormComponent } from './form/form.component';
+import { HighlightDirective } from './highlight.directive';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { DateCountPipeComponent } from './date-count-pipe/date-count-pipe.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    QuotesComponent,
-    HighlightDirective,
-    FormComponent,
+    AppComponent ,
+    QuotesComponent ,
+    FormComponent ,
+    HighlightDirective ,
+    QuoteDetailsComponent ,
+    NavBarComponent ,
+    DateCountPipeComponent,
   ],
 
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule ,
+     
   ],
 
   providers: [],
-  bootstrap: [AppComponent,]
+  bootstrap: [AppComponent, QuotesComponent, FormComponent]
 })
 export class AppModule { }
