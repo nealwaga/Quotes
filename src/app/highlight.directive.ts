@@ -5,10 +5,10 @@ import { Directive, ElementRef } from '@angular/core';
 })
 export class HighlightDirective {
 
-//  constructor ( private elem: ElementRef) { 
-//    elem.nativeElement.style.backgroundColor = 'grey'
-//  }
+  constructor () { 
+//    this.elem.nativeElement.style.background = '#8ded12';
+  }
 
-  constructor () { }
+//  constructor () { }
 
 }

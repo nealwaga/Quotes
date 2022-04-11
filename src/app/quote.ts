@@ -1,26 +1,22 @@
-//export class Quote {
+export class Quote {
 
-//    id: number;
-//    quote: string;
-//    upvotes: number;
-//    downvotes: number;
+    id: number;
+    submitter:string;
+    quote: string;
+    author: string;
+    date: Date;
+    upvote: number;
+    downvote: number;
 
-//   constructor (id:number, quote:string, upvotes:number, downvotes:number){
-//         this.id = id;
-//         this.quote = quote;
-//         this.upvotes = upvotes;
-//         this.downvotes = downvotes;
-//    }
+   constructor (id:number, submitter:string, quote:string, author: string, date: Date, upvote:number, downvote:number){
+         this.id = id;
+         this.submitter = submitter;
+         this.quote = quote;
+         this.author = author;
+         this.date = date;
+         this.upvote = upvote;
+         this.downvote = downvote;    }
 
-//}
 
-
-export class Quotes {
-    id: number | undefined;
-    submitter: string | undefined;
-    quote: string | undefined;
-    author: string | undefined;
-    date: Date | undefined;
-    upvote: number | undefined;
-    downvote: number | undefined;
 }
+
